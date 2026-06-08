@@ -1,0 +1,406 @@
+.candidate-register-page {
+  max-width: 1200px;
+  margin: 24px auto;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* ======================
+   主表格
+====================== */
+
+.register-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid #000;
+
+  th,
+  td {
+    border: 1px solid #000;
+    padding: 8px 5px;
+    vertical-align: middle;
+    word-break: break-all;
+  }
+
+  th {
+    width: 110px;
+    text-align: center;
+    background: #fafafa;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  td {
+    background: #fff;
+  }
+}
+
+/* ======================
+   内层表格
+====================== */
+
+.inner-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  th,
+  td {
+    border: 1px solid #d9d9d9;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  th {
+    background: #fafafa;
+    font-weight: 600;
+    //white-space: nowrap;
+  }
+}
+
+/* ======================
+   去除Form.Item默认间距
+====================== */
+
+.register-table {
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
+
+/* 错误状态 */
+
+/* ======================
+   表单错误样式
+====================== */
+
+.register-table {
+
+  /* Input */
+
+  .ant-form-item-has-error {
+
+    .ant-input {
+      border: 1px solid #ff4d4f !important;
+      background: #fff2f0;
+    }
+
+    .ant-input-affix-wrapper {
+      border: 1px solid #ff4d4f !important;
+      background: #fff2f0;
+    }
+
+  }
+
+  /* Select */
+
+  .ant-form-item-has-error {
+
+    .ant-select-borderless {
+
+      border: 1px solid #ff4d4f !important;
+
+      background: #fff2f0 !important;
+
+      box-shadow: none !important;
+
+    }
+
+  }
+
+  /* DatePicker */
+
+  .ant-form-item-has-error {
+
+    .ant-picker {
+
+      border: 1px solid #ff4d4f !important;
+
+      background: #fff2f0;
+
+    }
+
+  }
+
+  /* TextArea */
+
+  .ant-form-item-has-error {
+
+    textarea.ant-input {
+
+      border: 1px solid #ff4d4f !important;
+
+      background: #fff2f0;
+
+    }
+
+  }
+
+  /* 错误文字 */
+
+  .ant-form-item-explain-error {
+
+    color: #ff4d4f;
+
+    font-size: 12px;
+
+    line-height: 18px;
+
+    margin-top: 4px;
+
+  }
+
+}
+
+/* ======================
+   输入框统一风格
+====================== */
+
+.register-table {
+  .ant-input {
+    border: none !important;
+    box-shadow: none !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ant-input:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .ant-input-affix-wrapper {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .ant-input-affix-wrapper-focused {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ======================
+   Select
+====================== */
+
+.register-table {
+  .ant-select-selector {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ======================
+   DatePicker
+====================== */
+
+.register-table {
+  .ant-picker {
+    width: 100%;
+    border: none !important;
+    box-shadow: none !important;
+    padding-left: 0;
+  }
+}
+
+/* ======================
+   TextArea
+====================== */
+
+.register-table {
+  textarea.ant-input {
+    border: none !important;
+    resize: vertical;
+  }
+}
+
+/* ======================
+   上传组件
+====================== */
+
+.register-table {
+  .ant-upload-wrapper {
+    width: 100%;
+  }
+}
+
+/* ======================
+   底部按钮
+====================== */
+
+.footer-btn {
+  margin-top: 24px;
+  text-align: center;
+
+  button {
+    min-width: 120px;
+  }
+
+  button + button {
+    margin-left: 12px;
+  }
+}
+
+/* ======================
+   标题
+====================== */
+
+.candidate-register-page {
+  h2,
+  .ant-typography {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+}
+
+/* ======================
+   校验错误
+====================== */
+
+.register-table {
+  .ant-form-item-explain-error {
+    font-size: 12px;
+    line-height: 18px;
+    white-space: normal;
+  }
+}
+
+/* ======================
+   删除按钮
+====================== */
+
+.inner-table {
+  .ant-btn-dangerous {
+    padding: 0 8px;
+  }
+}
+
+/* ======================
+   A4打印样式
+====================== */
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .candidate-register-page {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .footer-btn {
+    display: none;
+  }
+
+  .ant-btn {
+    display: none !important;
+  }
+
+  .register-table {
+    border: 1px solid #000;
+  }
+
+  .register-table th,
+  .register-table td {
+    border: 1px solid #000;
+  }
+}
+
+/* ======================
+   手机端
+====================== */
+
+@media (max-width: 768px) {
+  .candidate-register-page {
+    padding: 12px;
+    margin: 0;
+  }
+
+  .register-table {
+    font-size: 12px;
+
+    th {
+      width: 90px;
+      padding: 6px;
+    }
+
+    td {
+      padding: 6px;
+    }
+  }
+
+  .inner-table {
+    min-width: 900px;
+  }
+
+  .footer-btn {
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    padding: 12px 0;
+    border-top: 1px solid #f0f0f0;
+  }
+}
+
+/* ======================
+   居住地址
+====================== */
+
+.address-wrapper {
+  display: flex;
+
+  flex-direction: column;
+
+  //gap: 12px;
+  //
+  //min-height: 90px;
+}
+
+.address-row {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.address-row .label {
+
+  flex-shrink: 0;
+
+  margin-right: 8px;
+
+}
+
+.address-row .ant-radio-group {
+
+  display: flex;
+
+  gap: 16px;
+
+}
+
+.address-row .ant-form-item {
+
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .address-row {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+  }
+
+}
