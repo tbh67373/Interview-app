@@ -36,8 +36,6 @@ export default function Router(){
 
                 />
 
-                {/*TODO:在提交性格测试后进入到结果页面 这时候要把结果传递给后台 然后清空storage*/}
-
                 <Route
 
                     exact
