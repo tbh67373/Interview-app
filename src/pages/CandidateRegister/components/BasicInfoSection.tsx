@@ -21,7 +21,7 @@ import {
     fertilityStatusList,
     maritalStatusList,
     politicalStatusList
-} from "../../../utils/constant";
+} from "../constant";
 
 const BasicInfoSection: React.FC =
     () => {

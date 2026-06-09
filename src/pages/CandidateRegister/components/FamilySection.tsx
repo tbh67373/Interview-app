@@ -15,7 +15,7 @@ import {
 import {
     mobileReg,
 } from '../utils';
-import {educational, politicalStatusList} from "../../../utils/constant";
+import {educational, politicalStatusList} from "../constant";
 
 const FamilySection: React.FC =
     () => {

@@ -13,7 +13,7 @@ import {
     PlusOutlined,
     DeleteOutlined,
 } from '@ant-design/icons';
-import {educational, isYesOrNo} from "../../../utils/constant";
+import {educational, isYesOrNo} from "../constant";
 
 const EducationSection: React.FC =
     () => {
