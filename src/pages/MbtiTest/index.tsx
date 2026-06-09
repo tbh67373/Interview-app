@@ -13,7 +13,7 @@ import {
     Button,
     Typography,
     message,
-    Modal, Result,
+    Result,
 } from 'antd';
 
 import {
@@ -390,7 +390,7 @@ export default function DiscTest(){
                 () => {
 
                     window.location.assign(
-                        '/result',
+                        '/mbtiResult',
                     );
 
                 },
@@ -471,7 +471,7 @@ export default function DiscTest(){
                         level={3}
                     >
 
-                        DISC性格测试
+                        MBTI性格测试
 
                     </Typography.Title>
 
