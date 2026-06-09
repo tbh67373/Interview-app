@@ -2,12 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './pages/CandidateRegister/style.less'
-import CandidateRegister from "./pages/CandidateRegister/index";
+import Router from './router';
 
 function App() {
   return (
     <div className="App">
-      <CandidateRegister/>
+      <Router/>
     </div>
   );
 }
