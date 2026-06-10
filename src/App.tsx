@@ -3,11 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import './pages/CandidateRegister/style.less'
 import Router from './router';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/locale/zh_CN';
 
 function App() {
   return (
     <div className="App">
-      <Router/>
+        <ConfigProvider
+            locale={zhCN}
+        >
+            <Router/>
+        </ConfigProvider>
     </div>
   );
 }
